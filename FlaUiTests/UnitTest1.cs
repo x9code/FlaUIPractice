@@ -98,6 +98,13 @@ namespace FlaUiTests
             Mouse.LeftClick(p1);
             Thread.Sleep(1000);
             Mouse.LeftClick(p2);
+            Point p3 = new Point(181, 78);
+            Mouse.Click(MouseButton.Middle, p3);
+            Mouse.MoveTo(p3);
+            Mouse.MoveBy(800,100);
+            Mouse.Position = p2;
+            Mouse.Scroll(10);
+            Mouse.HorizontalScroll(5);
         }
     }
 }
